@@ -19,8 +19,8 @@ export function DemoProjectsPreview() {
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionHeader
             eyebrow="Demo projects"
-            title="Show clients what their business could look like."
-            description="These demo websites help business owners visualise the kind of professional online presence we can build."
+            title="See what your business website could look like."
+            description="These demo websites help you visualise the kind of professional online presence we can build for your business."
           />
           <Link href="/portfolio" className="inline-flex items-center rounded-2xl bg-slate-950 px-6 py-4 font-black text-white transition hover:bg-slate-800">
             View all demos <ExternalLink className="ml-2 h-5 w-5" />

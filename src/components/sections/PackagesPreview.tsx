@@ -13,7 +13,7 @@ export function PackagesPreview() {
           <SectionHeader
             eyebrow="Packages"
             title="Start with what your business needs now."
-            description="Clear starting prices make it easier for business owners to choose a package without feeling confused."
+            description="Clear starting prices make it easier to choose the right package for your business."
           />
 
           <div className="rounded-[2rem] border border-emerald-300 bg-white p-6 shadow-sm">
@@ -24,7 +24,7 @@ export function PackagesPreview() {
               <div>
                 <h3 className="text-xl font-black">Launch Special</h3>
                 <p className="mt-2 leading-7 text-slate-600">
-                  Starter websites are ideal for the first 5 small businesses that want to go online quickly.
+                  We are taking 5 small businesses for starter websites this month. Ideal for businesses that want to go online quickly and look professional.
                 </p>
               </div>
             </div>

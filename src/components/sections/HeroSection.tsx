@@ -46,7 +46,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="text-4xl font-black leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            Websites that make your business look trusted.
+            Websites that make your business look professional and trusted.
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-8 text-slate-100 md:text-lg">

@@ -38,7 +38,7 @@ export function ProcessSection() {
           <div className="lg:sticky lg:top-28">
             <SectionHeader
               eyebrow="Our process"
-              title="We do not just place information on a page."
+              title="We do not just put information on a page."
               description="The website is planned around what the business wants: more enquiries, more bookings, more orders, and more trust."
             />
 

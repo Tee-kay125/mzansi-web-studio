@@ -59,7 +59,7 @@ const addOns = [
     icon: Search,
   },
   {
-    title: "Payment readiness",
+    title: "Online payment setup",
     description:
       "For ecommerce projects, we can prepare checkout and payment integration options.",
     icon: CreditCard,
@@ -115,7 +115,7 @@ export function ServicesPreview() {
             </h3>
             <p className="mt-4 leading-8 text-slate-600">
               Every business is different. Some only need a clean website and WhatsApp button.
-              Others need booking forms, maps, ecommerce, admin tools, or payment readiness.
+              Others need booking forms, maps, ecommerce, admin tools, or online payment setup.
             </p>
 
             <a

@@ -27,7 +27,7 @@ export function Navbar() {
           </div>
           <div>
             <p className="text-base font-black leading-tight text-white md:text-lg">{siteConfig.name}</p>
-            <p className="hidden text-xs text-slate-400 sm:block">Websites • Ecommerce • Automation</p>
+            <p className="hidden text-xs text-slate-400 sm:block">Websites • Ecommerce • Business Systems</p>
           </div>
         </Link>
 
