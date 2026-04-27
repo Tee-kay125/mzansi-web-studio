@@ -7,8 +7,27 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-slate-950 text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-4 md:px-6">
         <div className="md:col-span-2">
-          <h2 className="text-2xl font-black">{siteConfig.name}</h2>
-          <p className="mt-4 max-w-xl leading-7 text-slate-300">{siteConfig.description}</p>
+          <div className="flex items-center gap-3">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white">
+              <img
+                src="/images/logo.png"
+                alt="Mzansi Web Studio logo"
+                className="h-full w-full object-contain p-1"
+              />
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-black">{siteConfig.name}</h2>
+              <p className="text-sm text-slate-400">
+                Websites • Ecommerce • Business Systems
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-4 max-w-xl leading-7 text-slate-300">
+            {siteConfig.description}
+          </p>
+
           <a
             href={getWhatsAppLink()}
             target="_blank"
@@ -31,9 +50,15 @@ export function Footer() {
         <div>
           <h3 className="font-black">Contact</h3>
           <div className="mt-4 space-y-3 text-sm text-slate-300">
-            <p className="flex gap-2"><Phone className="h-4 w-4 text-emerald-300" /> {siteConfig.phone}</p>
-            <p className="flex gap-2"><Mail className="h-4 w-4 text-emerald-300" /> {siteConfig.email}</p>
-            <p className="flex gap-2"><MapPin className="h-4 w-4 text-emerald-300" /> {siteConfig.location}</p>
+            <p className="flex gap-2">
+              <Phone className="h-4 w-4 text-emerald-300" /> {siteConfig.phone}
+            </p>
+            <p className="flex gap-2">
+              <Mail className="h-4 w-4 text-emerald-300" /> {siteConfig.email}
+            </p>
+            <p className="flex gap-2">
+              <MapPin className="h-4 w-4 text-emerald-300" /> {siteConfig.location}
+            </p>
           </div>
         </div>
       </div>

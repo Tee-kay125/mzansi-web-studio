@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Code2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { getWhatsAppLink, siteConfig } from "@/data/site";
 
@@ -22,12 +22,21 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-400 text-slate-950 shadow-lg shadow-cyan-400/20">
-            <Code2 className="h-6 w-6" />
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-lg shadow-emerald-950/20">
+            <img
+              src="/images/logo.png"
+              alt="Mzansi Web Studio logo"
+              className="h-full w-full object-contain p-1"
+            />
           </div>
+
           <div>
-            <p className="text-base font-black leading-tight text-white md:text-lg">{siteConfig.name}</p>
-            <p className="hidden text-xs text-slate-400 sm:block">Websites • Ecommerce • Business Systems</p>
+            <p className="text-base font-black leading-tight text-white md:text-lg">
+              {siteConfig.name}
+            </p>
+            <p className="hidden text-xs text-slate-400 sm:block">
+              Websites • Ecommerce • Business Systems
+            </p>
           </div>
         </Link>
 
@@ -68,11 +77,16 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className={pathname === link.href ? "rounded-2xl bg-emerald-400/10 px-4 py-3 font-semibold text-emerald-300" : "rounded-2xl px-4 py-3 font-semibold text-slate-200 hover:bg-white/5"}
+                className={
+                  pathname === link.href
+                    ? "rounded-2xl bg-emerald-400/10 px-4 py-3 font-semibold text-emerald-300"
+                    : "rounded-2xl px-4 py-3 font-semibold text-slate-200 hover:bg-white/5"
+                }
               >
                 {link.label}
               </Link>
             ))}
+
             <a
               href={getWhatsAppLink()}
               target="_blank"
