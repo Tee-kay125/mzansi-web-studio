@@ -115,9 +115,9 @@ function SalonImage({
         alt={alt}
         className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#111014]/55 via-transparent to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#24110d]/55 via-transparent to-transparent" />
       <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-white/92 px-4 py-3 shadow-xl backdrop-blur">
-        <p className="text-xs font-black uppercase tracking-[0.22em] text-[#9d174d]">{label}</p>
+        <p className="text-xs font-black uppercase tracking-[0.22em] text-[#9f2f45]">{label}</p>
       </div>
     </div>
   );
@@ -125,7 +125,7 @@ function SalonImage({
 
 export default function SalonDemoPage() {
   return (
-    <main className="bg-[#fbf8fa] text-[#111014]">
+    <main className="bg-[#fffaf6] text-[#21130f]">
       <a
         href="#book"
         className="fixed bottom-5 right-5 z-50 hidden rounded-full bg-[#24d366] px-5 py-4 font-black text-white shadow-2xl shadow-green-950/30 transition hover:-translate-y-1 md:inline-flex"
@@ -138,7 +138,7 @@ export default function SalonDemoPage() {
       </div>
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-[#111014] text-white">
+      <section className="relative overflow-hidden bg-[#1d0f0d] text-white">
         <div className="absolute inset-0">
           <img
             src="/images/demos/salon/hero-bg.jpg"
@@ -146,10 +146,10 @@ export default function SalonDemoPage() {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-[#111014]/18" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#111014]/78 via-[#111014]/36 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#111014]/38" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_28%,rgba(184,50,100,0.14),transparent_30%),radial-gradient(circle_at_16%_78%,rgba(236,72,153,0.10),transparent_34%)]" />
+        <div className="absolute inset-0 bg-[#1d0f0d]/42" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1d0f0d]/90 via-[#381613]/64 to-[#6d1f42]/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1d0f0d]/15 via-transparent to-[#1d0f0d]/78" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_28%,rgba(244,114,182,0.24),transparent_30%),radial-gradient(circle_at_16%_78%,rgba(245,158,11,0.16),transparent_34%)]" />
 
         <div className="relative mx-auto max-w-7xl px-4 py-6 md:px-6">
           <div className="mb-8 flex items-center justify-between">
@@ -161,30 +161,30 @@ export default function SalonDemoPage() {
               Back to demos
             </Link>
 
-            <div className="hidden items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-bold text-amber-100 md:flex">
+            <div className="hidden items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-bold text-rose-100 md:flex">
               <Scissors className="h-4 w-4" /> Premium Salon Demo
             </div>
           </div>
 
           <div className="grid gap-12 pb-16 pt-8 md:grid-cols-[0.95fr_1.05fr] md:items-center md:pb-24 md:pt-12">
             <div>
-              <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/12 px-4 py-2 text-sm font-black text-amber-100 ring-1 ring-white/20 backdrop-blur">
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/12 px-4 py-2 text-sm font-black text-rose-100 ring-1 ring-white/20 backdrop-blur">
                 <Sparkles className="h-4 w-4 text-[#f7b267]" />
                 Cape Town Hair & Beauty Studio
               </div>
 
               <h1 className="max-w-3xl text-5xl font-black leading-[0.95] tracking-tight md:text-7xl">
-                Luxury hair care that feels personal, polished, and beautiful.
+                Step out looking polished, confident, and beautiful.
               </h1>
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-amber-50/92">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-rose-50/92">
                 Bella Hair Studio helps clients book professional braids, treatments, silk press, wig installation, and elegant styling with a smooth WhatsApp booking experience.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#book"
-                  className="inline-flex items-center justify-center rounded-2xl bg-[#f3c4d6] px-6 py-4 font-black text-[#111014] shadow-lg shadow-amber-950/25 transition hover:bg-[#b83264]"
+                  className="inline-flex items-center justify-center rounded-2xl bg-[#ff8fab] px-6 py-4 font-black text-[#250b10] shadow-lg shadow-rose-950/25 transition hover:bg-[#ffb3c6]"
                 >
                   Book on WhatsApp <MessageCircle className="ml-2 h-5 w-5" />
                 </a>
@@ -203,15 +203,15 @@ export default function SalonDemoPage() {
                   ["Same day", "Booking support"],
                 ].map(([value, label]) => (
                   <div key={label} className="rounded-3xl border border-white/12 bg-white/12 p-5 backdrop-blur">
-                    <p className="text-3xl font-black text-[#9d174d]">{value}</p>
-                    <p className="mt-1 text-sm text-amber-50/75">{label}</p>
+                    <p className="text-3xl font-black text-[#ffc2d1]">{value}</p>
+                    <p className="mt-1 text-sm text-rose-50/75">{label}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="relative">
-              <div className="absolute -left-8 -top-8 hidden h-32 w-32 rounded-full bg-[#b83264]/25 blur-3xl md:block" />
+              <div className="absolute -left-8 -top-8 hidden h-32 w-32 rounded-full bg-[#ff8fab]/25 blur-3xl md:block" />
               <div className="absolute -bottom-10 -right-10 hidden h-44 w-44 rounded-full bg-[#f7b267]/20 blur-3xl md:block" />
 
               <div className="relative rounded-[2.4rem] border border-white/18 bg-white/12 p-3 shadow-2xl shadow-black/35 backdrop-blur">
@@ -222,9 +222,9 @@ export default function SalonDemoPage() {
                   className="h-[430px] rounded-[1.9rem] md:h-[500px]"
                 />
 
-                <div className="absolute bottom-8 left-8 right-8 rounded-3xl bg-white/95 p-5 text-[#111014] shadow-2xl backdrop-blur">
+                <div className="absolute bottom-8 left-8 right-8 rounded-3xl bg-white/95 p-5 text-[#24110d] shadow-2xl backdrop-blur">
                   <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f7eef3] text-[#9d174d]">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffe3ea] text-[#c9184a]">
                       <CalendarCheck className="h-6 w-6" />
                     </div>
                     <div>
@@ -243,29 +243,29 @@ export default function SalonDemoPage() {
       </section>
 
       {/* BRAND STRIP */}
-      <section className="border-b border-[#e7c8d7] bg-white px-4 py-8 md:px-6">
+      <section className="border-b border-[#f3d5ce] bg-white px-4 py-8 md:px-6">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">Bella Hair Studio</p>
-            <h2 className="mt-2 text-2xl font-black md:text-3xl">Elegant hair care with effortless WhatsApp booking.</h2>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#c9184a]">Bella Hair Studio</p>
+            <h2 className="mt-2 text-2xl font-black md:text-3xl">Premium hair care with easy WhatsApp booking.</h2>
           </div>
           <div className="flex flex-wrap gap-3 text-sm font-bold text-stone-600">
             {['Braids', 'Treatments', 'Silk Press', 'Wig Installation'].map((item) => (
-              <span key={item} className="rounded-full bg-[#f7eef3] px-4 py-2">{item}</span>
+              <span key={item} className="rounded-full bg-[#fff0f3] px-4 py-2">{item}</span>
             ))}
           </div>
         </div>
       </section>
 
       {/* SPECIAL OFFER */}
-      <section className="bg-[#f7eef3] px-4 py-12 md:px-6">
-        <div className="mx-auto grid max-w-7xl gap-6 rounded-[2rem] border border-[#b83264] bg-white p-6 shadow-sm md:grid-cols-[1fr_auto] md:items-center md:p-8">
+      <section className="bg-[#fff0f3] px-4 py-12 md:px-6">
+        <div className="mx-auto grid max-w-7xl gap-6 rounded-[2rem] border border-[#f3b6c6] bg-white p-6 shadow-sm md:grid-cols-[1fr_auto] md:items-center md:p-8">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">New client special</p>
-            <h2 className="mt-2 text-3xl font-black md:text-4xl">New client beauty appointment from R350 this week.</h2>
-            <p className="mt-3 max-w-2xl leading-7 text-stone-600">A premium offer section gives customers a clear reason to book now instead of waiting.</p>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#c9184a]">New client special</p>
+            <h2 className="mt-2 text-3xl font-black md:text-4xl">Treatment + blow dry from R350 this week.</h2>
+            <p className="mt-3 max-w-2xl leading-7 text-stone-600">A special-offer banner gives customers a reason to book now instead of waiting.</p>
           </div>
-          <a href="#book" className="inline-flex items-center justify-center rounded-2xl bg-[#09070a] px-6 py-4 font-black text-white">
+          <a href="#book" className="inline-flex items-center justify-center rounded-2xl bg-[#24110d] px-6 py-4 font-black text-white">
             Claim Offer <ArrowRight className="ml-2 h-5 w-5" />
           </a>
         </div>
@@ -275,18 +275,18 @@ export default function SalonDemoPage() {
       <section id="services" className="px-4 py-20 md:px-6">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">Signature services</p>
-            <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Signature services presented with style.</h2>
-            <p className="mt-5 text-lg leading-8 text-stone-600">A premium salon website should make services, pricing, results, and booking feel effortless.</p>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#c9184a]">Signature services</p>
+            <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Services clients can understand at a glance.</h2>
+            <p className="mt-5 text-lg leading-8 text-stone-600">A salon website should show what you do, what it costs, and how customers can book without asking many questions.</p>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => (
-              <div key={service.title} className="group overflow-hidden rounded-[2rem] border border-[#e7c8d7] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+              <div key={service.title} className="group overflow-hidden rounded-[2rem] border border-[#f3d5ce] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
                 <SalonImage src={service.image} alt={service.title} label={service.title} className="h-64" />
                 <div className="p-6">
                   <h3 className="text-xl font-black">{service.title}</h3>
-                  <p className="mt-3 text-2xl font-black text-[#9d174d]">{service.price}</p>
+                  <p className="mt-3 text-2xl font-black text-[#c9184a]">{service.price}</p>
                   <p className="mt-3 leading-7 text-stone-600">{service.text}</p>
                 </div>
               </div>
@@ -304,14 +304,14 @@ export default function SalonDemoPage() {
           </div>
 
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">The experience</p>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#c9184a]">The experience</p>
             <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">A warm beauty space with professional service.</h2>
             <p className="mt-6 text-lg leading-8 text-stone-600">Bella Hair Studio is designed for clients who want neat styling, healthy hair care, and a comfortable salon experience. A website like this helps the salon look professional before the client even walks in.</p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {reasons.map((item) => (
-                <div key={item} className="flex items-center gap-3 rounded-2xl bg-[#f7eef3] p-4 font-bold text-stone-700">
-                  <CheckCircle2 className="h-5 w-5 text-[#9d174d]" /> {item}
+                <div key={item} className="flex items-center gap-3 rounded-2xl bg-[#fff0f3] p-4 font-bold text-stone-700">
+                  <CheckCircle2 className="h-5 w-5 text-[#c9184a]" /> {item}
                 </div>
               ))}
             </div>
@@ -320,20 +320,20 @@ export default function SalonDemoPage() {
       </section>
 
       {/* PRICING MENU */}
-      <section className="bg-[#fbf8fa] px-4 py-20 md:px-6">
+      <section className="bg-[#fff7f2] px-4 py-20 md:px-6">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.8fr_1.2fr] md:items-start">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">Price menu</p>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#c9184a]">Price menu</p>
             <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Clear prices help customers book faster.</h2>
             <p className="mt-5 leading-8 text-stone-600">Instead of replying to the same price questions all day, the business can display starting prices and use WhatsApp for final confirmation.</p>
           </div>
 
-          <div className="rounded-[2rem] border border-[#e7c8d7] bg-white p-6 shadow-sm md:p-8">
+          <div className="rounded-[2rem] border border-[#f3d5ce] bg-white p-6 shadow-sm md:p-8">
             <div className="grid gap-4 sm:grid-cols-2">
               {priceList.map(([name, price]) => (
-                <div key={name} className="flex items-center justify-between rounded-2xl bg-[#f7eef3] p-4">
+                <div key={name} className="flex items-center justify-between rounded-2xl bg-[#fff0f3] p-4">
                   <span className="font-black">{name}</span>
-                  <span className="font-black text-[#9d174d]">{price}</span>
+                  <span className="font-black text-[#c9184a]">{price}</span>
                 </div>
               ))}
             </div>
@@ -341,11 +341,33 @@ export default function SalonDemoPage() {
         </div>
       </section>
 
+      {/* GALLERY */}
+      <section className="px-4 py-20 md:px-6">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-sm font-black uppercase tracking-[0.25em] text-[#c9184a]">Gallery</p>
+              <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Show customers the quality before they book.</h2>
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-stone-600">A strong gallery gives customers confidence because beauty businesses are highly visual.</p>
+            </div>
+            <a href="#book" className="inline-flex items-center rounded-2xl bg-[#24110d] px-6 py-4 font-black text-white">Book now <ArrowRight className="ml-2 h-5 w-5" /></a>
+          </div>
+
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {services.map((item) => (
+              <div key={item.title} className="overflow-hidden rounded-[2rem] border border-[#f3d5ce] bg-white shadow-sm">
+                <SalonImage src={item.image} alt={item.title} label={item.title} className="h-80" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WHY CHOOSE */}
-      <section className="bg-[#111014] px-4 py-20 text-white md:px-6">
+      <section className="bg-[#2a1210] px-4 py-20 text-white md:px-6">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">Why choose us</p>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#ffb3c6]">Why choose us</p>
             <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Everything customers need to feel confident.</h2>
           </div>
 
@@ -368,9 +390,9 @@ export default function SalonDemoPage() {
               },
             ].map((item) => (
               <div key={item.title} className="rounded-[2rem] border border-white/10 bg-white/10 p-6 backdrop-blur">
-                <item.icon className="mb-6 h-8 w-8 text-[#9d174d]" />
+                <item.icon className="mb-6 h-8 w-8 text-[#ffb3c6]" />
                 <h3 className="text-2xl font-black">{item.title}</h3>
-                <p className="mt-4 leading-7 text-amber-50/75">{item.text}</p>
+                <p className="mt-4 leading-7 text-rose-50/75">{item.text}</p>
               </div>
             ))}
           </div>
@@ -381,14 +403,14 @@ export default function SalonDemoPage() {
       <section className="bg-white px-4 py-20 md:px-6">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">Testimonials</p>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#c9184a]">Testimonials</p>
             <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">What clients say.</h2>
           </div>
 
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {testimonials.map((testimonial) => (
-              <div key={testimonial.name} className="rounded-[2rem] border border-[#e7c8d7] bg-[#fbf8fa] p-6 shadow-sm">
-                <Quote className="mb-5 h-8 w-8 text-[#9d174d]" />
+              <div key={testimonial.name} className="rounded-[2rem] border border-[#f3d5ce] bg-[#fff7f2] p-6 shadow-sm">
+                <Quote className="mb-5 h-8 w-8 text-[#c9184a]" />
                 <p className="leading-8 text-stone-700">“{testimonial.text}”</p>
                 <div className="mt-6 flex items-center justify-between">
                   <p className="font-black">{testimonial.name}</p>
@@ -403,15 +425,15 @@ export default function SalonDemoPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#fbf8fa] px-4 py-20 md:px-6">
+      <section className="bg-[#fff7f2] px-4 py-20 md:px-6">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">Questions</p>
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#c9184a]">Questions</p>
             <h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">Make booking feel easy.</h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq) => (
-              <div key={faq.q} className="rounded-[1.5rem] border border-[#e7c8d7] bg-white p-6 shadow-sm">
+              <div key={faq.q} className="rounded-[1.5rem] border border-[#f3d5ce] bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-black">{faq.q}</h3>
                 <p className="mt-3 leading-7 text-stone-600">{faq.a}</p>
               </div>
@@ -423,8 +445,8 @@ export default function SalonDemoPage() {
       {/* BOOKING */}
       <section id="book" className="px-4 py-20 md:px-6">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[0.95fr_1.05fr]">
-          <div className="rounded-[2rem] bg-[#09070a] p-8 text-white shadow-2xl md:p-10">
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">Book now</p>
+          <div className="rounded-[2rem] bg-[#100907] p-8 text-white shadow-2xl md:p-10">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#ffb3c6]">Book now</p>
             <h2 className="mt-3 text-4xl font-black tracking-tight">Ready for your new look?</h2>
             <p className="mt-5 leading-8 text-stone-300">Customers can send a WhatsApp message directly from the website to ask about availability, pricing, or appointments.</p>
 
@@ -432,26 +454,26 @@ export default function SalonDemoPage() {
               <a href="#" className="flex items-center gap-4 rounded-2xl bg-[#24d366] p-4 font-black text-white">
                 <MessageCircle className="h-6 w-6" /> Book on WhatsApp
               </a>
-              <div className="flex items-center gap-4 rounded-2xl bg-white/10 p-4 font-semibold text-white"><Phone className="h-5 w-5 text-[#9d174d]" /> 063 000 0000</div>
-              <div className="flex items-center gap-4 rounded-2xl bg-white/10 p-4 font-semibold text-white"><AtSign className="h-5 w-5 text-[#9d174d]" /> @bellahairstudio</div>
-              <div className="flex items-center gap-4 rounded-2xl bg-white/10 p-4 font-semibold text-white"><MapPin className="h-5 w-5 text-[#9d174d]" /> Cape Town, South Africa</div>
+              <div className="flex items-center gap-4 rounded-2xl bg-white/10 p-4 font-semibold text-white"><Phone className="h-5 w-5 text-[#ffb3c6]" /> 063 000 0000</div>
+              <div className="flex items-center gap-4 rounded-2xl bg-white/10 p-4 font-semibold text-white"><AtSign className="h-5 w-5 text-[#ffb3c6]" /> @bellahairstudio</div>
+              <div className="flex items-center gap-4 rounded-2xl bg-white/10 p-4 font-semibold text-white"><MapPin className="h-5 w-5 text-[#ffb3c6]" /> Cape Town, South Africa</div>
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-[#e7c8d7] bg-white p-8 shadow-sm md:p-10">
-            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#9d174d]">Opening hours</p>
+          <div className="rounded-[2rem] border border-[#f3d5ce] bg-white p-8 shadow-sm md:p-10">
+            <p className="text-sm font-black uppercase tracking-[0.25em] text-[#c9184a]">Opening hours</p>
             <h3 className="mt-3 text-3xl font-black">Visit the salon</h3>
             <div className="mt-8 space-y-4">
               {hours.map(([day, time]) => (
-                <div key={day} className="flex items-center justify-between rounded-2xl bg-[#f7eef3] p-4">
-                  <div className="flex items-center gap-3"><Clock className="h-5 w-5 text-[#9d174d]" /><p className="font-black">{day}</p></div>
+                <div key={day} className="flex items-center justify-between rounded-2xl bg-[#fff0f3] p-4">
+                  <div className="flex items-center gap-3"><Clock className="h-5 w-5 text-[#c9184a]" /><p className="font-black">{day}</p></div>
                   <p className="font-semibold text-stone-600">{time}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 flex h-64 items-center justify-center rounded-[1.5rem] bg-gradient-to-br from-[#e7c8d7] to-[#f5e8ef] text-center">
-              <div><MapPin className="mx-auto mb-3 h-8 w-8 text-[#9d174d]" /><p className="font-black text-stone-800">Google Maps Placeholder</p><p className="mt-2 text-sm text-stone-600">A real map can be embedded here.</p></div>
+            <div className="mt-8 flex h-64 items-center justify-center rounded-[1.5rem] bg-gradient-to-br from-[#f3d5ce] to-[#fff0f3] text-center">
+              <div><MapPin className="mx-auto mb-3 h-8 w-8 text-[#c9184a]" /><p className="font-black text-stone-800">Google Maps Placeholder</p><p className="mt-2 text-sm text-stone-600">A real map can be embedded here.</p></div>
             </div>
           </div>
         </div>
